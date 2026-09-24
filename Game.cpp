@@ -7,6 +7,7 @@
 #include "polygon2D.h"
 #include "camera.h"
 #include "field.h"
+#include "MeshField.h"
 #include "player.h"
 #include "Enemy.h"
 #include "Tree.h"
@@ -20,7 +21,7 @@ void Game::Init()
 {
 	Manager::AddGameObject<Camera>();
 	Manager::AddGameObject<Sky>();
-	Manager::AddGameObject<Field>();
+	Manager::AddGameObject<MeshField>();
 
 	//Box* box = Manager::AddGameObject<Box>();
 	//box->SetPosition( { 5.0f,0.0f,-5.0f } );
